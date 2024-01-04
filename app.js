@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(cors({}))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname , 'index.html');
+    res.sendFile(path.join(__dirname , 'index.html'));
 });
 const httpServer = app.listen(7000,()=>console.log("http://localhost:7000/"));
 const io = new Server(httpServer,{cors:'*'});
